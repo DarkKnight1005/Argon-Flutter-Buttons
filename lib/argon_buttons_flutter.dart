@@ -76,10 +76,10 @@ class ArgonButton extends StatefulWidget {
         assert(clipBehavior != null);
 
   @override
-  _ArgonButtonState createState() => _ArgonButtonState();
+  ArgonButtonState createState() => ArgonButtonState();
 }
 
-class _ArgonButtonState extends State<ArgonButton>
+class ArgonButtonState extends State<ArgonButton>
     with TickerProviderStateMixin {
   double? loaderWidth;
 
