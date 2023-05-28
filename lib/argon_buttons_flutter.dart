@@ -7,6 +7,7 @@ import 'dart:ui' show lerpDouble;
 enum ButtonState { Busy, Idle }
 
 class ArgonButton extends StatefulWidget {
+  final Key? key;
   final double height;
   final double width;
   final double minWidth;
@@ -41,6 +42,7 @@ class ArgonButton extends StatefulWidget {
   ArgonButton(
       {required this.height,
       required this.width,
+      this.key,
       this.minWidth: 0,
       this.loader,
       this.animationDuration: const Duration(milliseconds: 450),
